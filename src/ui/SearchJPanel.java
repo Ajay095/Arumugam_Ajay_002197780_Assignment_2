@@ -73,9 +73,10 @@ public class SearchJPanel extends javax.swing.JPanel {
         setBackground(new java.awt.Color(204, 204, 204));
         setPreferredSize(new java.awt.Dimension(700, 700));
 
+        lblTitle.setBackground(new java.awt.Color(153, 153, 153));
         lblTitle.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
         lblTitle.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        lblTitle.setText("View Car Details");
+        lblTitle.setText("Search Car Details");
         lblTitle.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 lblTitleActionPerformed(evt);
@@ -100,6 +101,7 @@ public class SearchJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(tblCars);
 
+        btnFirstCar.setBackground(new java.awt.Color(153, 153, 153));
         btnFirstCar.setText("First Available Car");
         btnFirstCar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -107,6 +109,7 @@ public class SearchJPanel extends javax.swing.JPanel {
             }
         });
 
+        btnManufacturer.setBackground(new java.awt.Color(153, 153, 153));
         btnManufacturer.setText("Manufacturer");
         btnManufacturer.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -114,6 +117,7 @@ public class SearchJPanel extends javax.swing.JPanel {
             }
         });
 
+        btnManufacturedYear.setBackground(new java.awt.Color(153, 153, 153));
         btnManufacturedYear.setText("Manufactured Year");
         btnManufacturedYear.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -121,6 +125,7 @@ public class SearchJPanel extends javax.swing.JPanel {
             }
         });
 
+        btnMaxSeats.setBackground(new java.awt.Color(153, 153, 153));
         btnMaxSeats.setText("Max Seats");
         btnMaxSeats.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -128,6 +133,7 @@ public class SearchJPanel extends javax.swing.JPanel {
             }
         });
 
+        btnMinSeats.setBackground(new java.awt.Color(153, 153, 153));
         btnMinSeats.setText("Min Seats");
         btnMinSeats.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -147,6 +153,7 @@ public class SearchJPanel extends javax.swing.JPanel {
             }
         });
 
+        btnModelNumber.setBackground(new java.awt.Color(153, 153, 153));
         btnModelNumber.setText("Model Number");
         btnModelNumber.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -160,6 +167,7 @@ public class SearchJPanel extends javax.swing.JPanel {
             }
         });
 
+        btnSerialNumber.setBackground(new java.awt.Color(153, 153, 153));
         btnSerialNumber.setText("Serial Number");
         btnSerialNumber.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -173,6 +181,7 @@ public class SearchJPanel extends javax.swing.JPanel {
             }
         });
 
+        btnLocation.setBackground(new java.awt.Color(153, 153, 153));
         btnLocation.setText("Location");
         btnLocation.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -194,6 +203,7 @@ public class SearchJPanel extends javax.swing.JPanel {
 
         lblNoOfCarsNotAvailable.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
+        btnAvailabilityOfCars.setBackground(new java.awt.Color(153, 153, 153));
         btnAvailabilityOfCars.setText("Availability Of Cars");
         btnAvailabilityOfCars.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -205,7 +215,7 @@ public class SearchJPanel extends javax.swing.JPanel {
 
         lblLastUpdatedTimeOP.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        btnUniqueManufacturers.setBackground(new java.awt.Color(204, 255, 255));
+        btnUniqueManufacturers.setBackground(new java.awt.Color(153, 153, 153));
         btnUniqueManufacturers.setText("Manufacturer");
         btnUniqueManufacturers.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -226,6 +236,7 @@ public class SearchJPanel extends javax.swing.JPanel {
         ));
         jScrollPane2.setViewportView(tblUberUse);
 
+        btnCertExpiration.setBackground(new java.awt.Color(153, 153, 153));
         btnCertExpiration.setText("Certificate Expiration");
         btnCertExpiration.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -245,61 +256,63 @@ public class SearchJPanel extends javax.swing.JPanel {
                             .addComponent(lblTitle)
                             .addComponent(jScrollPane1)))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(287, 287, 287)
-                        .addComponent(jLabel2)
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
+                                .addGap(287, 287, 287)
+                                .addComponent(jLabel2))
+                            .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(btnManufacturer)
-                                    .addComponent(btnManufacturedYear)
-                                    .addComponent(btnMaxSeats)
-                                    .addComponent(btnMinSeats)
-                                    .addComponent(btnModelNumber)
-                                    .addComponent(btnLocation)
-                                    .addComponent(btnSerialNumber))
-                                .addGap(53, 53, 53)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(btnManufacturer)
+                                            .addComponent(btnManufacturedYear)
+                                            .addComponent(btnMaxSeats)
+                                            .addComponent(btnMinSeats)
+                                            .addComponent(btnModelNumber)
+                                            .addComponent(btnLocation)
+                                            .addComponent(btnSerialNumber))
+                                        .addGap(53, 53, 53)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(txtManufacturer, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                .addComponent(txtManufacturedYear, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addComponent(txtLocation, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addComponent(txtSerialNumber, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addComponent(txtModelNumber, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addComponent(txtMinSeats, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addComponent(txtMaxSeats, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(btnFirstCar)
+                                        .addGap(31, 31, 31)
+                                        .addComponent(btnCertExpiration)))
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(txtManufacturer, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(txtManufacturedYear, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(txtLocation, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(txtSerialNumber, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(txtModelNumber, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(txtMinSeats, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(txtMaxSeats, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                            .addComponent(btnFirstCar))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 113, Short.MAX_VALUE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(btnUniqueManufacturers)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(231, 231, 231))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addGroup(layout.createSequentialGroup()
-                                        .addComponent(lblLastUpdatedTime)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(lblLastUpdatedTimeOP, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGap(145, 145, 145)
+                                        .addComponent(btnAvailabilityOfCars))
                                     .addGroup(layout.createSequentialGroup()
-                                        .addComponent(btnAvailabilityOfCars)
-                                        .addGap(58, 58, 58))
-                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(105, 105, 105)
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addComponent(lblCarsNotAvailable)
                                             .addGroup(layout.createSequentialGroup()
                                                 .addGap(23, 23, 23)
                                                 .addComponent(lblCarsAvailable)))
-                                        .addGap(18, 18, 18)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addComponent(lblNoOfCarsAvailable, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                             .addComponent(lblNoOfCarsNotAvailable, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                        .addGap(48, 48, 48)
-                                        .addComponent(btnCertExpiration)))
-                                .addGap(249, 249, 249)))))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(157, 157, 157)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addGap(11, 11, 11)
+                                                .addComponent(btnUniqueManufacturers))))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(57, 57, 57)
+                                        .addComponent(lblLastUpdatedTime)
+                                        .addGap(57, 57, 57)
+                                        .addComponent(lblLastUpdatedTimeOP, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                        .addGap(0, 211, Short.MAX_VALUE)))
                 .addContainerGap())
         );
 
@@ -315,9 +328,11 @@ public class SearchJPanel extends javax.swing.JPanel {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 178, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(29, 29, 29)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(btnFirstCar)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(btnFirstCar)
+                            .addComponent(btnCertExpiration))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(btnManufacturer)
@@ -333,8 +348,7 @@ public class SearchJPanel extends javax.swing.JPanel {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(btnMinSeats)
-                            .addComponent(txtMinSeats, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnUniqueManufacturers))
+                            .addComponent(txtMinSeats, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(31, 31, 31)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(btnModelNumber)
@@ -353,10 +367,10 @@ public class SearchJPanel extends javax.swing.JPanel {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(lblNoOfCarsNotAvailable, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(lblCarsNotAvailable))
-                        .addGap(18, 18, 18)
-                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnUniqueManufacturers)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(btnCertExpiration)))
+                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -642,7 +656,29 @@ public class SearchJPanel extends javax.swing.JPanel {
     }//GEN-LAST:event_btnUniqueManufacturersActionPerformed
 
     private void btnCertExpirationActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCertExpirationActionPerformed
+        DefaultTableModel model = (DefaultTableModel) tblCars.getModel();
+        model.setRowCount(0);
+        //boolean firstAvailable = chkboxAvailibility.isSelected();
+        for(CarDetails cd : history.getHistory())
+        {
+        if(cd.isMaintenanceCert()==true)
+        {
         
+        Object[] row = new Object[10];
+        row[0] = cd.getModel();
+        row[1] = cd.isAvailability();
+        row[2] = cd.getSeats();
+        row[3] = cd.getLocation();
+        row[4] = cd.getYear();
+        row[5] = cd.getManufacturer();
+        row[6] = cd.getSerialNumber();
+        row[7] = cd.getLicenseNumber();
+        row[8] = cd.getModelNumber();
+        model.addRow(row);
+        
+        // break;
+        }
+        }
     }//GEN-LAST:event_btnCertExpirationActionPerformed
 
 

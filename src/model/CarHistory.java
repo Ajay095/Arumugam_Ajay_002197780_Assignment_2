@@ -55,4 +55,14 @@ public class CarHistory {
         history.set(i, cd);
         return cd;
     }
+    
+    public boolean isUnique(String serialNo) {
+        for(CarDetails car : history) {
+            if(car.getSerialNumber().equals(serialNo)) {
+                return false;
+        }
+
+        }
+        return true;
+}
 }

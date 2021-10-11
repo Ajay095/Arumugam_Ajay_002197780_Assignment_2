@@ -34,57 +34,49 @@
                       </Group>
                   </Group>
                   <Group type="102" attributes="0">
-                      <EmptySpace min="-2" pref="287" max="-2" attributes="0"/>
-                      <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                  </Group>
-                  <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="-2" pref="287" max="-2" attributes="0"/>
+                              <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="btnManufacturer" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="btnManufacturedYear" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="btnMaxSeats" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="btnMinSeats" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="btnModelNumber" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="btnLocation" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="btnSerialNumber" alignment="0" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="txtManufacturer" linkSize="1" alignment="0" min="-2" pref="111" max="-2" attributes="0"/>
-                                  <Group type="103" alignment="1" groupAlignment="0" attributes="0">
-                                      <Component id="txtManufacturedYear" linkSize="1" min="-2" max="-2" attributes="0"/>
-                                      <Component id="txtLocation" linkSize="1" min="-2" max="-2" attributes="0"/>
-                                      <Component id="txtSerialNumber" linkSize="1" min="-2" max="-2" attributes="0"/>
-                                      <Component id="txtModelNumber" linkSize="1" min="-2" max="-2" attributes="0"/>
-                                      <Component id="txtMinSeats" linkSize="1" min="-2" max="-2" attributes="0"/>
-                                      <Component id="txtMaxSeats" linkSize="1" min="-2" max="-2" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="btnManufacturer" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="btnManufacturedYear" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="btnMaxSeats" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="btnMinSeats" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="btnModelNumber" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="btnLocation" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="btnSerialNumber" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="txtManufacturer" linkSize="1" alignment="0" min="-2" pref="111" max="-2" attributes="0"/>
+                                          <Group type="103" alignment="1" groupAlignment="0" attributes="0">
+                                              <Component id="txtManufacturedYear" linkSize="1" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtLocation" linkSize="1" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtSerialNumber" linkSize="1" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtModelNumber" linkSize="1" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtMinSeats" linkSize="1" min="-2" max="-2" attributes="0"/>
+                                              <Component id="txtMaxSeats" linkSize="1" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="btnFirstCar" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
+                                      <Component id="btnCertExpiration" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
-                          </Group>
-                          <Component id="btnFirstCar" alignment="0" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace pref="113" max="32767" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="1" attributes="0">
-                              <Component id="btnUniqueManufacturers" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jScrollPane2" min="-2" pref="149" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="231" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="1" attributes="0">
-                              <Group type="103" groupAlignment="1" attributes="0">
-                                  <Group type="102" alignment="1" attributes="0">
-                                      <Component id="lblLastUpdatedTime" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Component id="lblLastUpdatedTimeOP" min="-2" pref="131" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="1" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="145" max="-2" attributes="0"/>
                                       <Component id="btnAvailabilityOfCars" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="58" max="-2" attributes="0"/>
                                   </Group>
-                                  <Group type="102" alignment="1" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="105" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
                                           <Component id="lblCarsNotAvailable" alignment="0" min="-2" max="-2" attributes="0"/>
                                           <Group type="102" alignment="0" attributes="0">
@@ -92,20 +84,32 @@
                                               <Component id="lblCarsAvailable" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                       </Group>
-                                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
                                           <Component id="lblNoOfCarsAvailable" linkSize="4" max="32767" attributes="0"/>
                                           <Component id="lblNoOfCarsNotAvailable" linkSize="4" min="-2" pref="53" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
-                                      <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
-                                      <Component id="btnCertExpiration" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="157" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="jScrollPane2" alignment="0" min="-2" pref="149" max="-2" attributes="0"/>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
+                                              <Component id="btnUniqueManufacturers" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="57" max="-2" attributes="0"/>
+                                      <Component id="lblLastUpdatedTime" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="57" max="-2" attributes="0"/>
+                                      <Component id="lblLastUpdatedTimeOP" min="-2" pref="145" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
-                              <EmptySpace min="-2" pref="249" max="-2" attributes="0"/>
                           </Group>
                       </Group>
+                      <EmptySpace min="0" pref="211" max="32767" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
@@ -120,9 +124,12 @@
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Component id="jScrollPane1" min="-2" pref="178" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <Component id="btnFirstCar" min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="btnFirstCar" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="btnCertExpiration" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="btnManufacturer" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -142,7 +149,6 @@
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="btnMinSeats" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="txtMinSeats" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="btnUniqueManufacturers" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
@@ -155,7 +161,7 @@
                           <Component id="txtSerialNumber" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
-                  <Group type="102" alignment="0" attributes="0">
+                  <Group type="102" attributes="0">
                       <Component id="btnAvailabilityOfCars" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
@@ -167,10 +173,10 @@
                           <Component id="lblNoOfCarsNotAvailable" linkSize="5" max="32767" attributes="0"/>
                           <Component id="lblCarsNotAvailable" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="jScrollPane2" min="-2" pref="127" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Component id="btnUniqueManufacturers" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="btnCertExpiration" min="-2" max="-2" attributes="0"/>
+                      <Component id="jScrollPane2" min="-2" pref="127" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
@@ -194,11 +200,14 @@
   <SubComponents>
     <Component class="javax.swing.JTextField" name="lblTitle">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="99" red="99" type="rgb"/>
+        </Property>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Lucida Grande" size="18" style="1"/>
         </Property>
         <Property name="horizontalAlignment" type="int" value="0"/>
-        <Property name="text" type="java.lang.String" value="View Car Details"/>
+        <Property name="text" type="java.lang.String" value="Search Car Details"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="lblTitleActionPerformed"/>
@@ -238,6 +247,9 @@
     </Container>
     <Component class="javax.swing.JButton" name="btnFirstCar">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="99" red="99" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="First Available Car"/>
       </Properties>
       <Events>
@@ -246,6 +258,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnManufacturer">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="99" red="99" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Manufacturer"/>
       </Properties>
       <Events>
@@ -254,6 +269,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnManufacturedYear">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="99" red="99" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Manufactured Year"/>
       </Properties>
       <Events>
@@ -262,6 +280,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnMaxSeats">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="99" red="99" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Max Seats"/>
       </Properties>
       <Events>
@@ -270,6 +291,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnMinSeats">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="99" red="99" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Min Seats"/>
       </Properties>
       <Events>
@@ -292,6 +316,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnModelNumber">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="99" red="99" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Model Number"/>
       </Properties>
       <Events>
@@ -305,6 +332,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnSerialNumber">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="99" red="99" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Serial Number"/>
       </Properties>
       <Events>
@@ -318,6 +348,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnLocation">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="99" red="99" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Location"/>
       </Properties>
       <Events>
@@ -361,6 +394,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnAvailabilityOfCars">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="99" red="99" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Availability Of Cars"/>
       </Properties>
       <Events>
@@ -384,7 +420,7 @@
     <Component class="javax.swing.JButton" name="btnUniqueManufacturers">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="ff" green="ff" red="cc" type="rgb"/>
+          <Color blue="99" green="99" red="99" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Manufacturer"/>
       </Properties>
@@ -424,6 +460,9 @@
     </Container>
     <Component class="javax.swing.JButton" name="btnCertExpiration">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="99" red="99" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Certificate Expiration"/>
       </Properties>
       <Events>

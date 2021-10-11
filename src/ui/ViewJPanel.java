@@ -5,6 +5,7 @@
  */
 package ui;
 
+import java.util.regex.Pattern;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 import model.CarDetails;
@@ -195,7 +196,7 @@ public class ViewJPanel extends javax.swing.JPanel {
                             .addComponent(txtModelNumber)
                             .addComponent(txtSerialNumber)
                             .addComponent(txtManufacturedYear))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 43, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addComponent(btnView)
@@ -259,13 +260,12 @@ public class ViewJPanel extends javax.swing.JPanel {
                         .addComponent(btnDelete)
                         .addComponent(btnUpdate)))
                 .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblSeatsAvailable)
+                    .addComponent(txtSeats, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(lblLocation)
-                        .addComponent(txtLocation, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(lblSeatsAvailable)
-                        .addComponent(txtSeats, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(txtLocation, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(lblAvailability)
@@ -334,6 +334,33 @@ public class ViewJPanel extends javax.swing.JPanel {
     }//GEN-LAST:event_btnDeleteActionPerformed
 
     private void btnUpdateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUpdateActionPerformed
+        
+        if(txtManufacturer.getText() == null || "".equals(txtManufacturer.getText()) || !Pattern.matches("^[a-zA-Z]+$", txtManufacturer.getText())){
+        JOptionPane.showMessageDialog(this, "Please enter valid manufacturer name");
+        return;
+        }
+        else if(txtModel.getText() == null || "".equals(txtModel.getText()) || !Pattern.matches("^[a-zA-Z]+$", txtModel.getText())){
+        JOptionPane.showMessageDialog(this, "Please enter valid model");
+        }
+        else if(txtModelNumber.getText() == null || "".equals(txtModelNumber.getText())){
+        JOptionPane.showMessageDialog(this, "Please enter valid Model Number");
+        }
+        else if(txtManufacturedYear.getText() == null || "".equals(txtManufacturedYear.getText()) || !Pattern.matches("^[0-9]{4}$", txtManufacturedYear.getText())){
+        JOptionPane.showMessageDialog(this, "Please enter valid manufacturing year");
+        }
+        else if(txtSeats.getText() == null || "".equals(txtSeats.getText()) || !Pattern.matches("^[0-9]+$", txtSeats.getText())){
+        JOptionPane.showMessageDialog(this, "Please enter valid seats");
+        }
+        else if(txtLocation.getText() == null || "".equals(txtLocation.getText()) || !Pattern.matches("^[a-zA-Z]+$", txtLocation.getText())){
+        JOptionPane.showMessageDialog(this, "Please enter valid city");
+        }
+        else if(txtSerialNumber.getText() == null || "".equals(txtSerialNumber.getText()) || !Pattern.matches("^[0-9]+", txtSerialNumber.getText())){
+        JOptionPane.showMessageDialog(this, "Please enter valid serial number");
+        }
+        else if(txtLicenseNumber.getText() == null || "".equals(txtLicenseNumber.getText()) || !Pattern.matches("^[0-9]+$", txtLicenseNumber.getText())){
+        JOptionPane.showMessageDialog(this, "Please enter valid License Number");
+        }
+        else {
         int i = tblCars.getSelectedRow();
         DefaultTableModel model = (DefaultTableModel) tblCars.getModel();
         CarDetails selectedCars = (CarDetails)model.getValueAt(i, 0);
@@ -370,8 +397,9 @@ public class ViewJPanel extends javax.swing.JPanel {
         }else{
             JOptionPane.showMessageDialog(null, "Error");
         }
+        }
     }//GEN-LAST:event_btnUpdateActionPerformed
-
+    
     private void tblCarsMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tblCarsMouseClicked
         // TODO add your handling code here:
     }//GEN-LAST:event_tblCarsMouseClicked

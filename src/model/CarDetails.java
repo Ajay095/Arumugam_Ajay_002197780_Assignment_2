@@ -68,6 +68,7 @@ public class CarDetails {
     }
 
     public void setManufacturer(String Manufacturer) {
+        
         this.Manufacturer = Manufacturer;
     }
 

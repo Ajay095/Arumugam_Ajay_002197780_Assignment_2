@@ -5,6 +5,7 @@
  */
 package ui;
 
+import java.util.regex.Pattern;
 import javax.swing.JOptionPane;
 import model.CarDetails;
 import model.CarHistory;
@@ -58,6 +59,7 @@ public class CreateJPanel extends javax.swing.JPanel {
 
         setBackground(new java.awt.Color(204, 204, 204));
 
+        lblTitle.setBackground(new java.awt.Color(153, 153, 153));
         lblTitle.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
         lblTitle.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         lblTitle.setText("Create Car Details");
@@ -76,6 +78,7 @@ public class CreateJPanel extends javax.swing.JPanel {
 
         lblManufacturer.setText("Manufacturer :");
 
+        btnCreate.setBackground(new java.awt.Color(153, 153, 153));
         btnCreate.setFont(new java.awt.Font("Lucida Grande", 1, 14)); // NOI18N
         btnCreate.setText("Create");
         btnCreate.addActionListener(new java.awt.event.ActionListener() {
@@ -215,6 +218,42 @@ public class CreateJPanel extends javax.swing.JPanel {
     }//GEN-LAST:event_txtSeatsActionPerformed
 
     private void btnCreateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCreateActionPerformed
+        
+        if(txtManufacturer.getText() == null || "".equals(txtManufacturer.getText()) || !Pattern.matches("^[a-zA-Z]+$", txtManufacturer.getText())){
+        JOptionPane.showMessageDialog(this, "Please enter valid manufacturer name");
+        return;
+        }
+        else if(txtModel.getText() == null || "".equals(txtModel.getText()) || !Pattern.matches("^[a-zA-Z]+$", txtModel.getText())){
+        JOptionPane.showMessageDialog(this, "Please enter valid model");
+        }
+        else if(txtModelNumber.getText() == null || "".equals(txtModelNumber.getText())){
+        JOptionPane.showMessageDialog(this, "Please enter valid Model Number");
+        }
+        else if(txtManufacturedYear.getText() == null || "".equals(txtManufacturedYear.getText()) || !Pattern.matches("^[0-9]{4}$", txtManufacturedYear.getText())){
+        JOptionPane.showMessageDialog(this, "Please enter valid manufacturing year");
+        }
+        else if(txtSeats.getText() == null || "".equals(txtSeats.getText()) || !Pattern.matches("^[0-9]+$", txtSeats.getText())){
+        JOptionPane.showMessageDialog(this, "Please enter valid seats");
+        }
+        else if(txtLocation.getText() == null || "".equals(txtLocation.getText()) || !Pattern.matches("^[a-zA-Z]+$", txtLocation.getText())){
+        JOptionPane.showMessageDialog(this, "Please enter valid city");
+        }
+        
+        else if(txtSerialNumber.getText() == null || "".equals(txtSerialNumber.getText()) || !Pattern.matches("^[0-9]+", txtSerialNumber.getText())){
+        JOptionPane.showMessageDialog(this, "Please enter valid serial number");
+        }
+        else if(!history.isUnique(txtSerialNumber.getText())){
+        JOptionPane.showMessageDialog(this, "Please enter unique serial number");
+        }
+        else if(txtLicenseNumber.getText() == null || "".equals(txtLicenseNumber.getText()) || !Pattern.matches("^[0-9]+$", txtLicenseNumber.getText())){
+        JOptionPane.showMessageDialog(this, "Please enter valid License Number");
+        }
+        else if(!history.isUnique(txtLicenseNumber.getText())){
+        JOptionPane.showMessageDialog(this, "Please enter unique License number");
+        }
+        
+        else{
+        
         String model = txtModel.getText();
         boolean availability = chkBoxAvailability.isSelected();
         byte seats = Byte.parseByte(txtSeats.getText());
@@ -251,7 +290,7 @@ public class CreateJPanel extends javax.swing.JPanel {
         txtSerialNumber.setText("");
         txtLocation.setText("");
         chkBoxMaintenanceCert.setSelected(false);
-    
+        }
     }//GEN-LAST:event_btnCreateActionPerformed
 
     private void txtLocationActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtLocationActionPerformed
